@@ -1,0 +1,149 @@
+/* ****************** TAG SELECTOR ***************** */
+body {
+    background-color: rgba(110, 107, 107, 0.233);
+    margin: 150px auto auto auto;
+}
+
+li.description {
+    color: rgb(237, 245, 245);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ****************** ID SELECTOR ***************** */
+#price-component-heading {
+    color: rgb(40, 168, 136);
+    font-size: 28px;
+    font-family: monospace;
+}
+
+#price-component-description {
+    color:rgb(122, 136, 136);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#price-about {
+    grid-column: 1/3;
+    padding: 28px 28px;
+}
+
+#price-description {
+    background-color: rgb(40, 168, 136);
+    padding: 16px 0px 16px 36px;
+}
+
+#price {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+#price-why {
+    background-color: rgb(71, 184, 159);
+    padding: 16px 16px;
+}
+
+#sign-up-btn {
+    background-color:rgb(143, 190, 49);
+    color: white;
+    padding: 12px 12px;
+    width: 90%;
+    margin: 12px auto;
+
+    font-size: 18px;
+    font-family: monospace;
+    border-radius: 8px;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#sign-up-btn:hover {
+    background-color: rgb(101, 145, 15) ;
+}
+
+/* ****************** CLASS SELECTOR ***************** */
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0px;
+    background-color: white;
+    width: 45%;
+    height: auto;
+    margin: 0px auto auto auto ;
+    box-shadow: -4px 4px 10px 2px rgb(101, 126, 126);
+}
+
+.description {
+    color: white;
+    list-style: square;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.small-title {
+    color: rgb(143, 190, 49);
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.small-heading, .price-per-month {
+    color: rgb(240, 240, 240);
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.price-per-month {
+    color: rgb(184, 201, 201);
+}
+
+
+
+
+
+/* ******************  MEDIA QUERY ***************** */
+@viewport {
+    zoom: 1;
+}
+
+@media screen and (max-width: 1240px){
+    
+    body {
+        background-color: rgba(110, 107, 107, 0.233);
+        margin: 0px;
+    }
+    
+    #price-about {
+        grid-column: 1/2
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0px 25% auto 25% ;
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 720px){
+    
+    body {
+        background-color: rgba(110, 107, 107, 0.233);
+        margin: 0px;
+    }
+    
+    #price-about {
+        grid-column: 1/2
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0px auto auto auto ;
+        width: 100%;
+    }
+
+}
